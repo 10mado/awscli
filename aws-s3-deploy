@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ZIPNAME=${CIRCLE_BRANCH}"-"${CIRCLE_BUILD_NUM}"-"${CIRCLE_SHA1}".zip"
+ZIPNAME=${CIRCLE_PROJECT_REPONAME}"-CircleCI-Build-"${CIRCLE_BUILD_NUM}".zip"
 
 # push apps to S3
 S3INFO=`aws deploy push \
